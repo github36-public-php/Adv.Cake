@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Начало конфигурации
+colors="true" - выделять сообщения цветом
+stopOnFailure="true"
+-->
+<phpunit
+bootstrap="vendor/autoload.php"
+colors="true"
+stopOnFailure="true"
+>
+
+<!--
+testsuites - начало раздела тестов
+testsuite name="Unit" - тест с именем, которое обычно совпадает с именем папки
+<directory>./tests/Unit</directory> - путь к папке с тестом
+-->
+<testsuites>
+
+<testsuite name="Unit">
+<directory>./tests/Unit</directory>
+</testsuite>
+
+</testsuites>
+
+</phpunit>
